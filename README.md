@@ -1,7 +1,3 @@
-Sure! Here's a simple README for the provided Tampermonkey userscript:
-
----
-
 # Remove Roblox Events Tab
 
 This Tampermonkey userscript removes the "Events" tab from the Roblox website for a cleaner browsing experience.
