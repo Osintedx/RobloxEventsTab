@@ -12,19 +12,19 @@
     'use strict';
 
     function removeEventsTab() {
-        var tabs = document.querySelectorAll('a.rbx-tab-heading span.text-lead.ng-binding');
-        tabs.forEach(function(tab) {
+        const tabs = document.querySelectorAll('a.rbx-tab-heading span.text-lead.ng-binding');
+        tabs.forEach(tab => {
             if (tab.textContent.trim() === 'Events') {
                 tab.closest('a.rbx-tab-heading').remove();
-                console.log('Removed Events tab');
+                console.log('%cRemoved Events tab', 'font-size: 20px; color: red; font-weight: bold;');
             }
         });
     }
 
-    window.addEventListener('load', function() {
+    window.addEventListener('load', () => {
         removeEventsTab();
 
-        var observer = new MutationObserver(function(mutations) {
+        const observer = new MutationObserver(() => {
             removeEventsTab();
         });
 
